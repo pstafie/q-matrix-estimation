@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "qem_dina"
+version = "0.1.0"
+description = "EM for DINA with constrained Q via MILP (Gurobi)"
+authors = [{name = "Mengqi Lin"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+"numpy>=1.23",
+"scipy>=1.10",
+"gurobipy>=11.0",
+"pytest>=7.0",
+]
+
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["dina"]
+include-package-data = true

@@ -1,0 +1,25 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Project layout (virtual):
+#
+#  qem_dina/
+#  ├─ pyproject.toml
+#  ├─ README.md
+#  └─ src/qem_dina/
+#     ├─ __init__.py
+#     ├─ config.py
+#     ├─ estep.py
+#     ├─ updates.py
+#     ├─ utils.py
+#     ├─ constraints.py
+#     ├─ q_mip.py
+#     ├─ em.py
+#     ├─ diagnostics.py
+#  tests/
+#    ├─ test_q_mip.py
+#    ├─ test_updates.py
+#    └─ test_em_small.py
+#  examples/
+#    └─ run_synthetic.py
+#
+# Paste these files into your repo with the same paths.
+# ─────────────────────────────────────────────────────────────────────────────
