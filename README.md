@@ -6,21 +6,36 @@ Research project comparing methods for recovering a binary Q-matrix in the DINA 
 
 ```text
 q-matrix-estimation/
+├── README.md
+├── experiments/
+│   └── run_simulation.py
 ├── methods/
-│   ├── ip/
-│   │   ├── dina-qip/
-│   │   ├── run_mip_simulation.py
-│   │   ├── run_mip_job.sh
-│   │   ├── setup_env.sh
-│   │   ├── smoke_test.py
-│   │   └── requirements.txt
-│   └── mcmc_and_penalized/
-│       ├── dina_gibbs_estimator.py
-│       ├── dina_lasso_estimator.py
-│       ├── dina_vb_estimator.py
-│       ├── dina_utils.py
-│       └── run_simulation.py
+│   ├── inference_methods/
+│   │   ├── dina_utils.py
+│   │   ├── gibbs_sampling/
+│   │   │   └── dina_gibbs_estimator.py
+│   │   ├── variational_bayes/
+│   │   │   └── dina_vb_estimator.py
+│   │   └── lasso_penalized/
+│   │       └── dina_lasso_estimator.py
+│   │
+│   └── ip/
+│       ├── core/
+│       │   └── dina-qip/
+│       ├── scripts/
+│       │   ├── run_mip_simulation.py
+│       │   └── smoke_test.py
+│       ├── jobs/
+│       │   └── run_mip_job.sh
+│       ├── env/
+│       │   └── setup_env.sh
+│       └── requirements.txt
 └── results/
+    ├── logs/
+    │   ├── mip_sim_46539311.err
+    │   └── mip_sim_46539311.out
+    ├── results_mip_simulation.csv
+    └── results_mip_simulation.txt
 ```
 
 ## Methods
