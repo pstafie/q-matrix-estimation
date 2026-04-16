@@ -4,6 +4,7 @@ Research project comparing methods for recovering a binary Q-matrix in the DINA 
 
 ## Project Structure
 
+```text
 q-matrix-estimation/
 ├── methods/
 │   ├── ip/
@@ -20,6 +21,7 @@ q-matrix-estimation/
 │       ├── dina_utils.py
 │       └── run_simulation.py
 └── results/
+```
 
 ## Methods
 
